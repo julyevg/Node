@@ -4,11 +4,14 @@ const router = Router();
 const products = require('../samples.json');
 console.log(products);
 
-router.get('/product', (req, res) => {
-    res.json(products);
 
+
+router.get('/product', (req, res) => {
+   res.json(products);
+   //res.send('[GET]Saludos desde express');
 });
 
+/*
 router.post('/', (req, res) => {
     const id = movies.length + 1;
     const { title, director, year, rating } = req.body;
@@ -19,5 +22,5 @@ router.post('/', (req, res) => {
     } else {
         res.status(500).json({error: 'There was an error.'});
     }
-});
+});*/
 module.exports = router;
