@@ -2,7 +2,7 @@ const { Schema, model } = require("mongoose");
 
 const ClientSchema = new Schema({
   
-    id : Number, 
+    client_id : Number, 
     name : String,
     description : String,
     phone : String,
