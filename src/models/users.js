@@ -1,11 +1,7 @@
 const { Schema, model } = require("mongoose");
-//const { Mongoose } = require('mongoose');
-
-
-
 
 const UserSchema = new Schema({
-  
+    user_id : Number,
     name : String,
     lastName : String,
     email : String,
@@ -16,4 +12,4 @@ const UserSchema = new Schema({
         default : false
     }
   });
-module.exports = model("User", UserSchema);//mongoose.model ('User',  UserSchema);
+module.exports = model("User", UserSchema);
